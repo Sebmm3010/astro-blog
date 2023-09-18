@@ -1,0 +1,56 @@
+---
+
+---
+
+<div>
+  <h1 class="text-center text-xl">¡Hablemos! ✨</h1>
+  <form
+    class="flex flex-col items-center gap-12 xl:gap-3 py-24"
+    name="contact"
+    data-netlify="true"
+  >
+    <div class="" transition:animate="slide">
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+        <label for="name">Nombre</label>
+        <br />
+        <input
+          placeholder="Juan andres"
+          class="w-64 bg-gray-200 px-4 py-2"
+          type="text"
+          name="name"
+          required
+        />
+      </p>
+    </div>
+    <div transition:animate="slide">
+      <p>
+        <label for="email">Email</label>
+        <br />
+        <input
+          placeholder="corre@corre.com"
+          type="email"
+          name="email"
+          class="w-64 bg-gray-200 px-4 py-2"
+          required
+        />
+      </p>
+    </div>
+    <div transition:animate="slide">
+      <p>
+        <label for="message">Message</label>
+        <br />
+        <textarea class="w-64 bg-gray-200 px-4 py-2" name="message" required
+        ></textarea>
+      </p>
+    </div>
+    <p class="rounded-md bg-primary px-4 py-2 font-bold text-white">
+      <input type="submit" value="Submit message" />
+    </p>
+    <input
+      class="text-gray-200 rounded-md bg-orange-600 px-1 py-2 w-52"
+      type="submit"
+      value="Enviar"
+    />
+  </form>
+</div>

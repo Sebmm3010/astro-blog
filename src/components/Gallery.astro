@@ -1,0 +1,23 @@
+---
+const artImg = ["/art1.jpg", "/art2.jpg", "/art3.jpg", "/art4.jpg"];
+---
+
+<div class="mx-12">
+  <h1 class="my-24 text-center text-xl underline font-bold">
+    Arte mas reciente.
+  </h1>
+  <div class="grid grid-cols-1 gap-24 xl:mx-48 xl:grid-cols-2">
+    {
+      artImg.map((src, i) => (
+        <div class="group relative cursor-pointer">
+          <img
+            class="relative z-10 w-full rounded-lg transition-all group-hover:-translate-x-3"
+            src={src}
+            alt={`paint${i}`}
+          />
+          <div class="absolute left-0 top-0 h-full w-full rounded-lg bg-black transition-all group-hover:translate-x-4 group-hover:translate-y-4" />
+        </div>
+      ))
+    }
+  </div>
+</div>

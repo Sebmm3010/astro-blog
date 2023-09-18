@@ -1,0 +1,27 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import { Navbar } from "../components";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type=".svg" href="/favicon.svg" />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <main>
+      <Navbar client:visible />
+      <slot />
+    </main>
+  </body>
+</html>
