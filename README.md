@@ -26,10 +26,10 @@ Para clonar este repositorio se necesita [Git](https://git-scm.com) y [Node.js](
 
 ```bash
 # Clonar repositorio
-$ git clone https://github.com/Sebmm3010/finance-dashboard
+$ git clone https://github.com/Sebmm3010/astro-blog
 
 # Ir al repositorio
-$ cd finance-dashboard
+$ cd astro-blog
 
 # Instalar dependencias
 $ npm install
@@ -39,8 +39,7 @@ $ pnpm install
 # Iniciar en desarrollo
 $ dev
 # Iniciar en produccion
-$ build
-$ preview
+$ start
 ```
 
 ## Creditos
@@ -48,9 +47,7 @@ $ preview
 This software uses the following open source packages:
 
 - [Node.js](https://nodejs.org/)
-- [Material Ui](https://mui.com/)
-- [Recharts](https://recharts.org/en-US/)
-- [Regression js](https://tom-alexander.github.io/regression-js/)
+- [Astro](https://astro.build/)
 
 ## Licencia
 
